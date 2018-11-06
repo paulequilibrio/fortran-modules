@@ -1,7 +1,7 @@
 module string_test
   use fruit
   implicit none
-  contains
+contains
 
   subroutine test_string_btrim
     use string, only: btrim

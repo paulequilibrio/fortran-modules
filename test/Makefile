@@ -19,7 +19,7 @@ executable = $(obj)/$(main).bin
 
 
 default: $(executable)
-	$(executable)
+	$(executable) -i ../data/input/input.csv -o ../data/output/test.csv
 
 $(executable): $(obj)/$(main).o $(test_obj) $(modules_obj) $(obj_mod)/fruit.o
 	$(compiler) $(flags) -J$(obj_mod) -o $(@) $(^)
