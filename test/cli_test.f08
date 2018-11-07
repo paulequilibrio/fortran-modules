@@ -14,9 +14,9 @@ contains
     use cli, only: cli_get_option_value
     character(len=:), allocatable :: option_value
     option_value = cli_get_option_value('-i')
-    call assert_equals ('../data/input/input.csv', option_value)
+    call assert_equals ('../data/input_test.csv', option_value)
     option_value = cli_get_option_value('-o')
-    call assert_equals ('../data/output/test.csv', option_value)
+    call assert_equals ('../data/output_test.csv', option_value)
   end subroutine test_cli_get_option_value
 
 end module cli_test
