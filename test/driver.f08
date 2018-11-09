@@ -6,6 +6,7 @@ program fruit_driver
   call init_fruit
 
   call test_string_btrim
+  call test_string_count_fields
   call test_cli_get_argument
   call test_cli_get_option_value
   call test_file_already_exist
